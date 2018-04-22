@@ -20,7 +20,7 @@ class SpiderMain(object):
             self.urls.add_new_urls(new_urls)
             self.outputer.collect_data(new_data)
             count = count + 1
-            if count == 10:
+            if count == 100:
                break
          except:
             print('craw failed: %s' % (new_url))
